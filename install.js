@@ -29,7 +29,8 @@ module.exports = {
         path: "app",                // Edit this to customize the path to start the shell from
         message: [
           "uv pip install gradio devicetorch",
-          "uv pip install -r requirements.txt"
+          "uv pip install -r requirements.txt",
+          "{{platform === 'darwin' ? 'uv pip install moshi-mlx' : 'pip install moshi'}}"
         ]
       }
     },
