@@ -18,7 +18,7 @@ module.exports = {
         message: [
           "uv pip install gradio devicetorch",
           "uv pip install -r requirements.txt",
-          "{{platform === 'darwin' ? 'uv pip install moshi-mlx==0.2.2' : 'pip install moshi==0.2.2'}}"
+          "{{platform === 'darwin' ? 'uv pip install moshi-mlx==0.2.2' : 'pip install moshi==0.2.2 bitsandbytes'}}"
         ]
       }
     },
